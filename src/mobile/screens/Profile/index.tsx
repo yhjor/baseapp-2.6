@@ -2,11 +2,10 @@ import * as React from 'react';
 import { useIntl } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 import { ChevronIcon } from '../../../assets/images/ChevronIcon';
-import { copy, getLanguageName } from '../../../helpers';
+import { copy } from '../../../helpers';
 import {
     alertPush,
     selectCurrentColorTheme,
-    selectCurrentLanguage,
     selectUserInfo,
 } from '../../../modules';
 import { ProfileLinks, UserInfo } from '../../components';
@@ -15,7 +14,6 @@ const ProfileMobileScreenComponent: React.FC = () => {
     const intl = useIntl();
     const dispatch = useDispatch();
     const user = useSelector(selectUserInfo);
-    const currentLanguage = useSelector(selectCurrentLanguage);
     const currentTheme = useSelector(selectCurrentColorTheme);
 
     const handleCopyText = () => {
@@ -57,16 +55,16 @@ const ProfileMobileScreenComponent: React.FC = () => {
     ];
 
     const settingsLinks = [
-        {
-            titleKey: 'page.mobile.profileLinks.settings.language',
-            route: '/profile/language',
-            children: (
-                <div>
-                    <span>{getLanguageName(currentLanguage)}</span>
-                    <ChevronIcon />
-                </div>
-            ),
-        },
+        // {
+        //     titleKey: 'page.mobile.profileLinks.settings.language',
+        //     route: '/profile/language',
+        //     children: (
+        //         <div>
+        //             <span>{getLanguageName(currentLanguage)}</span>
+        //             <ChevronIcon />
+        //         </div>
+        //     ),
+        // },
         {
             titleKey: 'page.mobile.profileLinks.settings.theme',
             route: '/profile/theme',

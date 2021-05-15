@@ -20,14 +20,14 @@ const FeaturesSecurityIcon = require('../../assets/images/landing/features/Secur
 const FeaturesCommunityIcon = require('../../assets/images/landing/features/Community.svg');
 const FeaturesAPIIcon = require('../../assets/images/landing/features/API.svg');
 
-const TelegramIcon = require('../../assets/images/landing/social/Telegram.svg');
-const LinkedInIcon = require('../../assets/images/landing/social/LinkedIn.svg');
-const TwitterIcon = require('../../assets/images/landing/social/Twitter.svg');
-const YouTubeIcon = require('../../assets/images/landing/social/YouTube.svg');
-const RedditIcon = require('../../assets/images/landing/social/Reddit.svg');
-const FacebookIcon = require('../../assets/images/landing/social/Facebook.svg');
-const MediumIcon = require('../../assets/images/landing/social/Medium.svg');
-const CoinMarketIcon = require('../../assets/images/landing/social/CoinMarket.svg');
+// const TelegramIcon = require('../../assets/images/landing/social/Telegram.svg');
+// const LinkedInIcon = require('../../assets/images/landing/social/LinkedIn.svg');
+// const TwitterIcon = require('../../assets/images/landing/social/Twitter.svg');
+// const YouTubeIcon = require('../../assets/images/landing/social/YouTube.svg');
+// const RedditIcon = require('../../assets/images/landing/social/Reddit.svg');
+// const FacebookIcon = require('../../assets/images/landing/social/Facebook.svg');
+// const MediumIcon = require('../../assets/images/landing/social/Medium.svg');
+// const CoinMarketIcon = require('../../assets/images/landing/social/CoinMarket.svg');
 
 
 interface ReduxProps {
@@ -111,24 +111,25 @@ class Landing extends React.Component<Props> {
     }
 
     public renderPlatformInfoBlock() {
-        return (
-            <div className="pg-landing-screen__platform-info">
-                <div className="pg-landing-screen__platform-info__wrap">
-                    <div className="pg-landing-screen__platform-info__wrap__item">
-                        <span>{this.translate('page.body.landing.platformInfo.item.first.value')}</span>
-                        <span>{this.translate('page.body.landing.platformInfo.item.first.title')}</span>
-                    </div>
-                    <div className="pg-landing-screen__platform-info__wrap__item">
-                        <span>{this.translate('page.body.landing.platformInfo.item.second.value')}</span>
-                        <span>{this.translate('page.body.landing.platformInfo.item.second.title')}</span>
-                    </div>
-                    <div className="pg-landing-screen__platform-info__wrap__item">
-                        <span>{this.translate('page.body.landing.platformInfo.item.third.value')}</span>
-                        <span>{this.translate('page.body.landing.platformInfo.item.third.title')}</span>
-                    </div>
-                </div>
-            </div>
-        );
+        return null;
+        // return (
+        //     <div className="pg-landing-screen__platform-info">
+        //         <div className="pg-landing-screen__platform-info__wrap">
+        //             <div className="pg-landing-screen__platform-info__wrap__item">
+        //                 <span>{this.translate('page.body.landing.platformInfo.item.first.value')}</span>
+        //                 <span>{this.translate('page.body.landing.platformInfo.item.first.title')}</span>
+        //             </div>
+        //             <div className="pg-landing-screen__platform-info__wrap__item">
+        //                 <span>{this.translate('page.body.landing.platformInfo.item.second.value')}</span>
+        //                 <span>{this.translate('page.body.landing.platformInfo.item.second.title')}</span>
+        //             </div>
+        //             <div className="pg-landing-screen__platform-info__wrap__item">
+        //                 <span>{this.translate('page.body.landing.platformInfo.item.third.value')}</span>
+        //                 <span>{this.translate('page.body.landing.platformInfo.item.third.title')}</span>
+        //             </div>
+        //         </div>
+        //     </div>
+        // );
     }
 
     public renderRegisterBlock() {
@@ -251,47 +252,48 @@ class Landing extends React.Component<Props> {
     }
 
     public renderFooter() {
-        return (
-            <div className="pg-landing-screen__footer">
-                <div className="pg-landing-screen__footer__wrap">
-                    <div className="pg-landing-screen__footer__wrap__left" onClick={e => this.handleScrollTop()}>
-                        <LogoIcon />
-                    </div>
-                    <div className="pg-landing-screen__footer__wrap__navigation">
-                        <div className="pg-landing-screen__footer__wrap__navigation__col">
-                            <Link to="/trading/">{this.translate('page.body.landing.footer.exchange')}</Link>
-                            <Link to="/wallets">{this.translate('page.body.landing.footer.wallets')}</Link>
-                            <Link to="/">{this.translate('page.body.landing.footer.fees')}</Link>
-                        </div>
-                        <div className="pg-landing-screen__footer__wrap__navigation__col">
-                            <Link to="/">{this.translate('page.body.landing.footer.faq')}</Link>
-                            <Link to="/">{this.translate('page.body.landing.footer.support')}</Link>
-                            <Link to="/">{this.translate('page.body.landing.footer.privacy')}</Link>
-                        </div>
-                        <div className="pg-landing-screen__footer__wrap__navigation__col">
-                            <Link to="/">{this.translate('page.body.landing.footer.about')}</Link>
-                            <Link to="/">{this.translate('page.body.landing.footer.community')}</Link>
-                            <Link to="/">{this.translate('page.body.landing.footer.info')}</Link>
-                        </div>
-                    </div>
-                    <div className="pg-landing-screen__footer__wrap__social">
-                        <div className="pg-landing-screen__footer__wrap__social__row">
-                            <img src={TelegramIcon} alt="Telegram" />
-                            <img src={LinkedInIcon} alt="LinkedIn" />
-                            <img src={TwitterIcon} alt="Twitter" />
-                            <img src={YouTubeIcon} alt="YouTube" />
-                        </div>
-                        <div className="pg-landing-screen__footer__wrap__social__row">
-                            <img src={RedditIcon} alt="Reddit" />
-                            <img src={FacebookIcon} alt="Facebook" />
-                            <img src={MediumIcon} alt="MediumIcon" />
-                            <img src={CoinMarketIcon} alt="CoinMarket" />
-                        </div>
-                    </div>
-                </div>
-                <span className="pg-landing-screen__footer__rights">{this.translate('page.body.landing.footer.rights')}</span>
-            </div>
-        );
+        return null;
+        // return (
+        //     <div className="pg-landing-screen__footer">
+        //         <div className="pg-landing-screen__footer__wrap">
+        //             {/* <div className="pg-landing-screen__footer__wrap__left" onClick={e => this.handleScrollTop()}>
+        //                 <LogoIcon />
+        //             </div>
+        //             <div className="pg-landing-screen__footer__wrap__navigation">
+        //                 <div className="pg-landing-screen__footer__wrap__navigation__col">
+        //                     <Link to="/trading/">{this.translate('page.body.landing.footer.exchange')}</Link>
+        //                     <Link to="/wallets">{this.translate('page.body.landing.footer.wallets')}</Link>
+        //                     <Link to="/">{this.translate('page.body.landing.footer.fees')}</Link>
+        //                 </div>
+        //                 <div className="pg-landing-screen__footer__wrap__navigation__col">
+        //                     <Link to="/">{this.translate('page.body.landing.footer.faq')}</Link>
+        //                     <Link to="/">{this.translate('page.body.landing.footer.support')}</Link>
+        //                     <Link to="/">{this.translate('page.body.landing.footer.privacy')}</Link>
+        //                 </div>
+        //                 <div className="pg-landing-screen__footer__wrap__navigation__col">
+        //                     <Link to="/">{this.translate('page.body.landing.footer.about')}</Link>
+        //                     <Link to="/">{this.translate('page.body.landing.footer.community')}</Link>
+        //                     <Link to="/">{this.translate('page.body.landing.footer.info')}</Link>
+        //                 </div>
+        //             </div> */}
+        //             {/* <div className="pg-landing-screen__footer__wrap__social">
+        //                 <div className="pg-landing-screen__footer__wrap__social__row">
+        //                     <img src={TelegramIcon} alt="Telegram" />
+        //                     <img src={LinkedInIcon} alt="LinkedIn" />
+        //                     <img src={TwitterIcon} alt="Twitter" />
+        //                     <img src={YouTubeIcon} alt="YouTube" />
+        //                 </div>
+        //                 <div className="pg-landing-screen__footer__wrap__social__row">
+        //                     <img src={RedditIcon} alt="Reddit" />
+        //                     <img src={FacebookIcon} alt="Facebook" />
+        //                     <img src={MediumIcon} alt="MediumIcon" />
+        //                     <img src={CoinMarketIcon} alt="CoinMarket" />
+        //                 </div>
+        //             </div> */}
+        //         </div>
+        //         <span className="pg-landing-screen__footer__rights">{this.translate('page.body.landing.footer.rights')}</span>
+        //     </div>
+        // );
     }
 
     public render() {

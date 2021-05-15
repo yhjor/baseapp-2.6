@@ -16,7 +16,7 @@ export const DocumentationHeader: React.FC = () => {
             <div className="pg-documentation-header__version">
                 <h4>{intl.formatMessage({ id: 'page.documentation.header.version.title' })}&nbsp;{documentation?.info?.version}</h4>
             </div>
-            <div className="pg-documentation-header__contact-info">
+            {/* <div className="pg-documentation-header__contact-info">
                 <span>{intl.formatMessage({ id: 'page.documentation.header.contactInfo.title' })}</span>
                 <a
                     href={documentation?.info?.contact?.url}
@@ -28,7 +28,7 @@ export const DocumentationHeader: React.FC = () => {
                 <a href={`mailto: ${documentation?.info?.contact?.email}`}>
                     {documentation?.info?.contact?.email}
                 </a>
-            </div>
+            </div> */}
             <div className="pg-documentation-header__license">
                 <span>{intl.formatMessage({ id: 'page.documentation.header.license.title' })}</span>
                 <a
